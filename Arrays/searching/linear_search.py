@@ -14,7 +14,8 @@ else:
 
 
 '''
-Linear search is a method for searching for an element in a collection of elements. In linear search, each element of the collection is visited one by one in a sequential fashion to find the desired element. Linear search is also known as sequential search.
+Linear search is a method for searching for an element in a collection of elements. In linear search, each element of the collection
+is visited one by one in a sequential fashion to find the desired element. Linear search is also known as sequential search.
 Time Complexity - best case = O(1)
                 - worst case = O(N)
 When we have an unsorted array or list, linear search is most commonly used to find any element in the collection.

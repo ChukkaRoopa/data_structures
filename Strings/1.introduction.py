@@ -12,7 +12,10 @@ print("Positive indexing: ", string[0])
 # Negative indexing
 print("Negative indexing: ", string[-9])
 
-# Slicing 
+# Slicing , slice(stop), or slice(start, stop,step)
+print("using slice() method: ", string[slice(4,12,1)])
+
+# using list slicing method
 print("Slicing from 3 to end character: ", string[3:])
 print("Slicing from 4 to last 3rd charater: ", string[4:-3])
 
@@ -76,6 +79,23 @@ print(String)
 
 # String formatting
 
+# Method 1 : using % operator (old method)
+x = "looked"
+string = "Leo %s and %s around"%("walked",x)
+print("formatting using % operator: ",string)
+
+# Method 2 : using f-string
+name = "leo"
+print(f"Using f-string. My name is {name}")
+
+# Method 3 : using Template class
+from string import Template
+n1 = "Roopa"
+n2 = "Hello!"
+n = Template('$n2 $n1')
+print("formatting using template class: ", n.substitute(n1 = n1,n2 = n2)) 
+
+# Method 4 : using format() string method
 # Default formatting
 string = "{} {} {}".format("I", "Love", "You")
 print("Default formatting: ", string)
@@ -108,3 +128,22 @@ for i in string[:8:1]:
 string = "Roopa Reddy"
 for index, char in enumerate(string):
     print(f"Char  at index {index}: {char}")
+
+# String concatenation
+# using "+" operator
+var1 = "Hello "
+var2 = "Roopa"
+var = var1 + var2
+print("string concatenation using + operator: ", var)
+
+# using join() method
+var1 = "Hello"
+var2 = "Roopa"
+var = "".join([var1, var2])   # without space
+print("using join() method: ", var)
+
+var = " ".join([var1, var2])   # with space
+print("using join() method: ", var)
+
+# using comma 
+print("using comma: ", var1, var2)

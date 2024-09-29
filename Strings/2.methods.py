@@ -42,4 +42,4 @@ print(text.replace("geeks","code"))
 # index()
 print("index() method")
 
-print(text.index("for",30))
+print(text.index("for",6))

@@ -1,9 +1,10 @@
 # rotate an array by d positions to the left using temp array
 
 arr = [1,2,3,4 ,5,6,7]
-d = 2
+d = 8
 n = len(arr)
 temp = []
+d = d % n
 for i in range(d,n):
     temp.append(arr[i])
 for i in range(d):
